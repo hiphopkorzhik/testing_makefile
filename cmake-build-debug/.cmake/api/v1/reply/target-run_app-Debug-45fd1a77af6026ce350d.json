@@ -2,10 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "run_app.exe"
-		},
-		{
-			"path" : "run_app.pdb"
+			"path" : "run_app"
 		}
 	],
 	"backtrace" : 1,
@@ -45,17 +42,14 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g"
-				},
-				{
-					"fragment" : "-std=gnu++14"
+					"fragment" : "-g -std=gnu++14 -fdiagnostics-color=always"
 				}
 			],
 			"includes" : 
 			[
 				{
 					"backtrace" : 2,
-					"path" : "C:/Users/PopovArtem/CLionProjects/ProjectPart1/lib/googletest-1.14.0/googletest/include"
+					"path" : "/home/popov/CLionProjects/testing_makefile/lib/googletest-1.14.0/googletest/include"
 				}
 			],
 			"language" : "CXX",
@@ -85,16 +79,12 @@
 			{
 				"fragment" : "",
 				"role" : "flags"
-			},
-			{
-				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",
-				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
 	},
 	"name" : "run_app",
-	"nameOnDisk" : "run_app.exe",
+	"nameOnDisk" : "run_app",
 	"paths" : 
 	{
 		"build" : ".",

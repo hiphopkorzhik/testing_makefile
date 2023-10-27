@@ -79,24 +79,21 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g"
+					"fragment" : "-g -std=c++14 -fdiagnostics-color=always"
 				},
 				{
-					"fragment" : "-Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers"
-				},
-				{
-					"fragment" : "-std=c++14"
+					"fragment" : "-Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers"
 				}
 			],
 			"includes" : 
 			[
 				{
 					"backtrace" : 6,
-					"path" : "C:/Users/PopovArtem/CLionProjects/ProjectPart1/lib/googletest-1.14.0/googletest/include"
+					"path" : "/home/popov/CLionProjects/testing_makefile/lib/googletest-1.14.0/googletest/include"
 				},
 				{
 					"backtrace" : 6,
-					"path" : "C:/Users/PopovArtem/CLionProjects/ProjectPart1/lib/googletest-1.14.0/googletest"
+					"path" : "/home/popov/CLionProjects/testing_makefile/lib/googletest-1.14.0/googletest"
 				}
 			],
 			"language" : "CXX",
@@ -126,7 +123,7 @@
 		],
 		"prefix" : 
 		{
-			"path" : "C:/Program Files (x86)/ProjectPart1"
+			"path" : "/usr/local"
 		}
 	},
 	"name" : "gtest",

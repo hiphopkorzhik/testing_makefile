@@ -2,10 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "run_tests.exe"
-		},
-		{
-			"path" : "run_tests.pdb"
+			"path" : "run_tests"
 		}
 	],
 	"backtrace" : 1,
@@ -52,10 +49,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g"
-				},
-				{
-					"fragment" : "-std=gnu++14"
+					"fragment" : "-g -std=gnu++14 -fdiagnostics-color=always"
 				}
 			],
 			"includes" : 
@@ -63,12 +57,12 @@
 				{
 					"backtrace" : 3,
 					"isSystem" : true,
-					"path" : "C:/Users/PopovArtem/CLionProjects/ProjectPart1/lib/googletest-1.14.0/googletest/include"
+					"path" : "/home/popov/CLionProjects/testing_makefile/lib/googletest-1.14.0/googletest/include"
 				},
 				{
 					"backtrace" : 2,
 					"isSystem" : true,
-					"path" : "C:/Users/PopovArtem/CLionProjects/ProjectPart1/lib/googletest-1.14.0/googletest"
+					"path" : "/home/popov/CLionProjects/testing_makefile/lib/googletest-1.14.0/googletest"
 				}
 			],
 			"language" : "CXX",
@@ -90,11 +84,11 @@
 	[
 		{
 			"backtrace" : 2,
-			"id" : "gtest_main::@a0ac9289cd92a5e60ec4"
+			"id" : "gtest::@a0ac9289cd92a5e60ec4"
 		},
 		{
 			"backtrace" : 2,
-			"id" : "gtest::@a0ac9289cd92a5e60ec4"
+			"id" : "gtest_main::@a0ac9289cd92a5e60ec4"
 		}
 	],
 	"id" : "run_tests::@6890427a1f51a3e7e1df",
@@ -112,28 +106,24 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "lib\\libgtest.a",
+				"fragment" : "lib/libgtest.a",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "lib\\libgtest_main.a",
+				"fragment" : "lib/libgtest_main.a",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "lib\\libgtest.a",
-				"role" : "libraries"
-			},
-			{
-				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",
+				"fragment" : "lib/libgtest.a",
 				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
 	},
 	"name" : "run_tests",
-	"nameOnDisk" : "run_tests.exe",
+	"nameOnDisk" : "run_tests",
 	"paths" : 
 	{
 		"build" : ".",
